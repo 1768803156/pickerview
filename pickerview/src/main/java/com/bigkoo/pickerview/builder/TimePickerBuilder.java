@@ -153,6 +153,11 @@ public class TimePickerBuilder {
         return this;
     }
 
+    public TimePickerBuilder setRang(int startYear, int endYear) {
+        mPickerOptions.startYear = startYear;
+        mPickerOptions.endYear = endYear;
+        return this;
+    }
 
     /**
      * 设置间距倍数,但是只能在1.0-4.0f之间
